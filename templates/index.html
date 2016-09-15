@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/application.css') }}">    
+    
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <center><h1>Tic Tac Toe!</h1></center>
+      <div id="board">
+        <table>
+          <tr id="row1">
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"> </td>
+            <td class="cell" id="2"> </td>
+          </tr>
+          <tr id="row2">
+            <td class="cell" id="3"> </td>
+            <td class="cell" id="4"> </td>
+            <td class="cell" id="5"> </td>
+          </tr>
+          <tr id="row3">
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="restart-button">Restart Game</div>
+      <center><div class="winner"></div></center>
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/ai.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/application.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/array.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/game.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/player.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/ui.js') }}"></script>
+    </div>
+  </body>
+</html>
