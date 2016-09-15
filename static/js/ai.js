@@ -14,13 +14,7 @@ AI.prototype.gameBoard = function() {
 }
 
 AI.prototype.isTie = function() {
-  // var board = this.gameBoard();
   return this.game.isTie();
-
-  // for (var i = 0; i < board.length; i++) {
-  //   if (!board[i]) return false;
-  // }
-  // return true;
 };
 
 AI.prototype.setBoard = function(board) {
